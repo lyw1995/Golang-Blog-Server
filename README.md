@@ -23,3 +23,8 @@ Go语言编写的简易版博客服务端
 * [BlogFront博客客户端](https://github.com/lyw1995/Angular5-Blog-Front)
 * [Admin后台管理系统](https://github.com/lyw1995/Angular5-Blog-Admin)
 
+## 待完善
+* 添加文章评价,文章标签等功能
+* 用swagger生成API文档, 非完整RestFul风格API改进
+* 客户端,管理后台一些已知问题
+* 等等
