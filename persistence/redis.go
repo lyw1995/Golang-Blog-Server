@@ -20,6 +20,8 @@ func init() {
 			if err != nil {
 				return nil, err
 			}
+			// 线上环境redis配置密码, 则需要加上这句AUTH
+			//_,err = c.Do("AUTH","24245@163.com")
 			return c, err
 		},
 		//testOnBorrow 向资源池借用连接时是否做连接有效性检测(ping)，无效连接会被移除 默认值 false 业务量很大时候建议设置为false(多一次ping的开销)。
