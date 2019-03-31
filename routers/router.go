@@ -18,7 +18,9 @@ type Router struct {
 //路由配置
 func NewApiRouter(server *dotweb.HttpServer) *Router {
 	router := &Router{server: server, group: server.Group("/api")}
-	router.group.Use(middleware.NewCROSMiddleware())
+	if config.Config().EnvProd {
+		router.group.Use(middleware.NewCROSMiddleware())
+	}
 	return router
 }
 
