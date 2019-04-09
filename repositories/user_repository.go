@@ -1,11 +1,10 @@
 package repositories
 
 import (
-	"blogserver/common"
-	"blogserver/models"
 	"github.com/jinzhu/gorm"
+	"track/blogserver/common"
+	"track/blogserver/models"
 )
-
 //对应的数据库中表: users user_infos
 type UserRepository struct {
 	*BaseRepository

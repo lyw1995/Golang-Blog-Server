@@ -1,10 +1,10 @@
 package services
 
 import (
-	"blogserver/common"
-	"blogserver/models"
-	"blogserver/repositories"
-	"blogserver/utils"
+	"track/blogserver/common"
+	"track/blogserver/models"
+	"track/blogserver/repositories"
+	"track/blogserver/utils"
 )
 
 type LinkSerivce struct {

@@ -1,10 +1,10 @@
 package repositories
 
 import (
-	"blogserver/common"
-	"blogserver/models"
-	"github.com/jinzhu/gorm"
 	"fmt"
+	"github.com/jinzhu/gorm"
+	"track/blogserver/common"
+	"track/blogserver/models"
 )
 
 type ArticleRepository struct {

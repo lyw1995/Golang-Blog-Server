@@ -1,10 +1,10 @@
 package services
 
 import (
-	"blogserver/common"
-	"blogserver/models"
-	"blogserver/repositories"
 	"sync"
+	"track/blogserver/common"
+	"track/blogserver/models"
+	"track/blogserver/repositories"
 )
 
 type CategoryService struct {

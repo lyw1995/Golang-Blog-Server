@@ -1,8 +1,8 @@
 package repositories
 
 import (
-	"blogserver/persistence"
 	"github.com/jinzhu/gorm"
+	"track/blogserver/persistence"
 )
 
 //动态连接查询

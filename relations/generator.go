@@ -1,10 +1,11 @@
 package relations
 
 import (
-	"blogserver/models"
-	"blogserver/persistence"
+
 	"github.com/jinzhu/gorm"
 	"time"
+	"track/blogserver/models"
+	"track/blogserver/persistence"
 )
 
 /*

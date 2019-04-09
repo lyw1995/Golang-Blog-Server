@@ -1,8 +1,8 @@
 package repositories
 
 import (
-	"blogserver/models"
 	"github.com/jinzhu/gorm"
+	"track/blogserver/models"
 )
 
 //友链管理,对应数据中表: friendly_links

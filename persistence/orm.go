@@ -1,10 +1,11 @@
 package persistence
 
 import (
-	"blogserver/config"
+
 	"fmt"
 	_ "github.com/go-sql-driver/mysql"
 	"github.com/jinzhu/gorm"
+	"track/blogserver/config"
 )
 
 // 持久化 之 gorm  mysql

@@ -1,10 +1,10 @@
 package services
 
 import (
-	"blogserver/common"
-	"blogserver/models"
-	"blogserver/repositories"
 	"github.com/devfeel/dotweb"
+	"track/blogserver/common"
+	"track/blogserver/models"
+	"track/blogserver/repositories"
 )
 
 type UploadService struct {

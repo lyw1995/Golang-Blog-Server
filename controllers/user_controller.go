@@ -1,19 +1,17 @@
 package controllers
 
 import (
-	"blogserver/common"
-	"blogserver/config"
-	"blogserver/models"
-	"blogserver/services"
-	"blogserver/utils"
 	"database/sql"
 	"github.com/devfeel/dotweb"
 	"github.com/devfeel/middleware/jwt"
 	"net/http"
 	"strconv"
 	"time"
+	"track/blogserver/common"
+	"track/blogserver/models"
+	"track/blogserver/services"
+	"track/blogserver/utils"
 )
-
 //用户控制中心
 type UserController struct {
 	service *services.UserService

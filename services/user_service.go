@@ -1,15 +1,15 @@
 package services
 
 import (
-	"blogserver/common"
-	"blogserver/models"
-	"blogserver/repositories"
-	"blogserver/utils"
 	"database/sql"
 	"github.com/devfeel/middleware/jwt"
 	"time"
+	"track/blogserver/common"
+	"track/blogserver/config"
+	"track/blogserver/models"
+	"track/blogserver/repositories"
+	"track/blogserver/utils"
 	"unicode/utf8"
-	"blogserver/config"
 )
 
 type UserService struct {

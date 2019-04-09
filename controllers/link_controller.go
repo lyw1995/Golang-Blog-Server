@@ -1,13 +1,13 @@
 package controllers
 
 import (
-	"blogserver/common"
-	"blogserver/models"
-	"blogserver/services"
-	"blogserver/utils"
 	"github.com/devfeel/dotweb"
 	"net/http"
 	"strconv"
+	"track/blogserver/common"
+	"track/blogserver/models"
+	"track/blogserver/services"
+	"track/blogserver/utils"
 )
 
 type LinkController struct {

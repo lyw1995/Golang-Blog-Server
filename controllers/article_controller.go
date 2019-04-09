@@ -1,15 +1,15 @@
 package controllers
 
 import (
-	"blogserver/common"
-	"blogserver/models"
-	"blogserver/services"
-	"blogserver/utils"
 	"github.com/devfeel/dotweb"
 	"net/http"
 	"strconv"
 	"time"
-	"blogserver/repositories"
+	"track/blogserver/common"
+	"track/blogserver/models"
+	"track/blogserver/repositories"
+	"track/blogserver/services"
+	"track/blogserver/utils"
 )
 
 type ArticleController struct {

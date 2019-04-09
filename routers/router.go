@@ -1,11 +1,11 @@
 package routers
 
 import (
-	"blogserver/config"
-	"blogserver/controllers"
-	"blogserver/middleware"
 	"github.com/devfeel/dotweb"
 	"github.com/jinzhu/gorm"
+	"track/blogserver/config"
+	"track/blogserver/controllers"
+	"track/blogserver/middleware"
 )
 
 var DBConn *gorm.DB

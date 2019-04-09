@@ -1,13 +1,10 @@
 package repositories
 
 import (
-	"blogserver/config"
 	"fmt"
 	"io"
 	"mime/multipart"
 	"os"
-	"path/filepath"
-	"strings"
 	"time"
 )
 

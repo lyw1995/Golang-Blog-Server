@@ -1,10 +1,8 @@
 package repositories
 
 import (
-	"blogserver/common"
-	"blogserver/models"
 	"github.com/jinzhu/gorm"
-	"time"
+	"track/blogserver/models"
 )
 
 type CateGoryRepository struct {
