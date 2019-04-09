@@ -4,7 +4,9 @@
 ![blogfront](https://github.com/lyw1995/Angular5-Blog-Front/raw/master/snapshot/blog_front.png)
 
 Go语言编写的简易版博客服务端
-
++ 开启go mod` export GO111MODULE=on`
++ god mod 代理设置`export GOPROXY=https://athens.azurefd.net`
++ Goland --> 设置里面 开启 vgo (go modules)
 + 项目创建基于 `go version go1.10.3 darwin/amd64`
 + 测试运行 `go run main.go` 打开`http://localhost:8888`
 + Api配置在`./routers`目录下,自行测试
