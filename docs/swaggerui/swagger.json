@@ -1,0 +1,313 @@
+{
+  "consumes": [
+    "application/json"
+  ],
+  "produces": [
+    "application/json"
+  ],
+  "swagger": "2.0",
+  "info": {
+    "description": "API Docs for Golang-Blog-Server v1",
+    "title": "Golang-Blog-Server - 博客API文档",
+    "termsOfService": "Schemes: [http]",
+    "contact": {
+      "name": "Track",
+      "url": "http://blog.yinguiw.com",
+      "email": "24245@163.com"
+    },
+    "license": {
+      "name": "N/A"
+    },
+    "version": "1.0.0"
+  },
+  "basePath": "/api",
+  "paths": {
+    "/admin/users": {
+      "get": {
+        "description": "获取所有用户列表",
+        "tags": [
+          "user"
+        ],
+        "operationId": "获取所有用户列表"
+      },
+      "post": {
+        "description": "创建用户",
+        "tags": [
+          "user"
+        ],
+        "operationId": "创建用户"
+      }
+    },
+    "/admin/users/:uid": {
+      "get": {
+        "description": "获取某个用户信息",
+        "tags": [
+          "user"
+        ],
+        "operationId": "获取某个用户信息"
+      },
+      "put": {
+        "description": "修改用户信息",
+        "tags": [
+          "user"
+        ],
+        "operationId": "修改用户信息"
+      },
+      "delete": {
+        "description": "删除用户",
+        "tags": [
+          "user"
+        ],
+        "operationId": "删除用户"
+      }
+    },
+    "/admin/users/:uid/categorys": {
+      "get": {
+        "description": "获取用户所有分类",
+        "tags": [
+          "category"
+        ],
+        "operationId": "获取用户所有分类"
+      },
+      "post": {
+        "description": "添加分类",
+        "tags": [
+          "category"
+        ],
+        "operationId": "添加分类"
+      }
+    },
+    "/admin/users/:uid/categorys/:cid": {
+      "get": {
+        "description": "获取指定分类信息",
+        "tags": [
+          "category"
+        ],
+        "operationId": "获取指定分类信息"
+      },
+      "put": {
+        "description": "修改分类信息",
+        "tags": [
+          "category"
+        ],
+        "operationId": "修改分类信息"
+      },
+      "delete": {
+        "description": "删除分类",
+        "tags": [
+          "category"
+        ],
+        "operationId": "删除分类"
+      }
+    },
+    "/admin/users/:uid/categorys/:cid/articles": {
+      "post": {
+        "description": "在某分类下创建文章",
+        "tags": [
+          "article"
+        ],
+        "operationId": "在某分类下创建文章"
+      },
+      "delete": {
+        "description": "删除分类下所有文章",
+        "tags": [
+          "article"
+        ],
+        "operationId": "删除分类下所有文章"
+      }
+    },
+    "/admin/users/:uid/categorys/:cid/articles/:aid": {
+      "put": {
+        "description": "修改文章",
+        "tags": [
+          "article"
+        ],
+        "operationId": "修改文章"
+      },
+      "delete": {
+        "description": "删除某篇文章",
+        "tags": [
+          "article"
+        ],
+        "operationId": "删除某篇文章"
+      }
+    },
+    "/admin/users/:uid/links": {
+      "get": {
+        "description": "获取用户所有友链",
+        "tags": [
+          "link"
+        ],
+        "operationId": "获取用户所有友链"
+      },
+      "post": {
+        "description": "添加友链",
+        "tags": [
+          "link"
+        ],
+        "operationId": "添加友链"
+      }
+    },
+    "/admin/users/:uid/links/:lid": {
+      "get": {
+        "description": "获取指定友链信息",
+        "tags": [
+          "link"
+        ],
+        "operationId": "获取指定友链信息"
+      },
+      "put": {
+        "description": "修改友链信息",
+        "tags": [
+          "link"
+        ],
+        "operationId": "修改友链信息"
+      },
+      "delete": {
+        "description": "删除友链",
+        "tags": [
+          "link"
+        ],
+        "operationId": "删除友链"
+      }
+    },
+    "/v1/admin/extends": {
+      "get": {
+        "description": "获取网站统计信息",
+        "tags": [
+          "extend"
+        ],
+        "operationId": "获取网站统计信息"
+      },
+      "post": {
+        "description": "传入文章url采集csdn文章",
+        "tags": [
+          "extend"
+        ],
+        "operationId": "传入文章url采集csdn文章"
+      }
+    },
+    "/v1/admin/sessions": {
+      "post": {
+        "description": "管理员登录",
+        "tags": [
+          "session"
+        ],
+        "operationId": "管理员登录"
+      }
+    },
+    "/v1/admin/sessions/:uid": {
+      "delete": {
+        "description": "退出登录",
+        "tags": [
+          "session"
+        ],
+        "operationId": "退出登录"
+      }
+    },
+    "/v1/admin/sessions/upload": {
+      "post": {
+        "description": "管理员登录上传图片信息",
+        "tags": [
+          "session"
+        ],
+        "operationId": "管理员登录上传图片信息"
+      }
+    },
+    "/v1/users": {
+      "get": {
+        "description": "获取默认用户信息",
+        "tags": [
+          "user"
+        ],
+        "operationId": "getDefaultUser"
+      }
+    },
+    "/v1/users/:uid": {
+      "get": {
+        "description": "获取指定用户id用户信息",
+        "tags": [
+          "user"
+        ],
+        "operationId": "getUserById"
+      }
+    },
+    "/v1/users/:uid/articles": {
+      "get": {
+        "description": "获取用户所有文章",
+        "tags": [
+          "article"
+        ],
+        "operationId": "获取用户所有文章"
+      }
+    },
+    "/v1/users/:uid/articles/:aid": {
+      "get": {
+        "description": "获取某篇文章",
+        "tags": [
+          "article"
+        ],
+        "operationId": "获取某篇文章"
+      }
+    },
+    "/v1/users/:uid/categorys": {
+      "get": {
+        "description": "获取指定用户所有分类",
+        "tags": [
+          "category"
+        ],
+        "operationId": "获取指定用户所有分类"
+      }
+    },
+    "/v1/users/:uid/categorys/:cid/articles": {
+      "get": {
+        "description": "获取用户指定分类下所有文章",
+        "tags": [
+          "category"
+        ],
+        "operationId": "获取用户指定分类下所有文章"
+      }
+    },
+    "/v1/users/:uid/links": {
+      "get": {
+        "description": "获取指定用户所有友链",
+        "tags": [
+          "link"
+        ],
+        "operationId": "获取指定用户所有友链"
+      }
+    },
+    "/v1/users/:uid/links/:lid": {
+      "get": {
+        "description": "获取id友链信息",
+        "tags": [
+          "link"
+        ],
+        "operationId": "获取id友链信息"
+      }
+    },
+    "/v1/users/:uid/other": {
+      "get": {
+        "description": "获取热门最新文章",
+        "tags": [
+          "article"
+        ],
+        "operationId": "获取热门最新文章"
+      }
+    }
+  },
+  "securityDefinitions": {
+    "bearer": {
+      "type": "token",
+      "name": "Authorization",
+      "in": "header"
+    }
+  },
+  "security": [
+    {
+      "bearer": [
+        "[]"
+      ]
+    }
+  ]
+}

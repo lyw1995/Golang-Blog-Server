@@ -1,4 +1,4 @@
-module track/blogserver
+module github.com/track/blogserver
 
 require (
 	github.com/BurntSushi/toml v0.3.1

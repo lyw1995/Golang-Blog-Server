@@ -1,0 +1,25 @@
+# This block as  BlogServer Config
+server_name = "BlogServer"    # 服务器名称
+log_enable = true             # 是否开启日志
+#log_path = "/var/log/blogserver"  # 服务器日志输出路径
+#img_path = "/home/blogserver/images"  # 图片上传路径
+log_path = "/Users/track/Desktop/blog/log" # 服务器日志输出路径
+img_path = "/Users/track/Desktop/blog/img"  # 图片上传路径
+server_port = 8888           # 服务器端口号
+environment_prod = false      # 程序环境,正式环境设置为true
+secret_key = "UQPdFMLjszp35gpj" # 接口签名秘钥,前后端一致
+default_client_user = "Track"   #blog客户端默认使用的账户
+
+# This block as DBConfig struct
+[database]
+db_type = "mysql"              # 数据库类型
+db_name = "blog"               # 数据库名
+db_addr = "127.0.0.1"          # 数据库URL
+db_port = "3306"               # 数据库端口
+db_user = "root"               # 账号
+db_password = "123456"          # 密码
+db_debug = true                # 调试模式
+
+[redis]
+r_host ="127.0.0.1"
+r_port = "6379"

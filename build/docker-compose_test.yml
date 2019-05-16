@@ -1,0 +1,68 @@
+version: '3'
+services:
+  golang:
+    restart: always
+    image: golang:latest
+    ports:
+     - "8888:8888"
+    volumes:
+     - ./go/src/blogserver:/go/src/blogserver
+     - ./go/logs:/var/log/blogserver
+     - ./go/images:/home/blogserver/images
+    command: go run /go/src/blogserver/main.go
+    environment:
+       APP_CONFIG_PATH: /go/src/blogserver/config.toml
+    networks:
+       blogserver:
+            aliases:
+               - golang
+
+  nginx:
+    restart: always
+    image: yinguiw/blog_nginx:1.0
+    ports: 
+     - "24245:24245"
+     - "24246:24246"
+    networks:
+       blogserver:
+            aliases:
+               - nginx
+
+  redis:
+    restart: always
+    image: redis:3.2
+    ports:
+     - "6379:6379"
+    volumes:
+     - ./redis:/data
+     - ./redis/redis.conf:/usr/local/etc/redis/redis.conf
+    command: /usr/local/etc/redis/redis.conf
+    networks:
+       blogserver:
+            aliases:
+               - redis
+
+  mysql:
+   restart: always
+   image: mysql:5.6
+   ports:
+    - "3306:3306"
+   volumes:
+    - ./mysql/conf:/etc/mysql/conf.d
+    - ./mysql/data:/var/lib/mysql
+    - ./mysql/logs:/logs
+    - ./mysql/init:/docker-entrypoint-initdb.d
+   environment:
+    MYSQL_ROOT_PASSWORD: 123456
+   networks:
+       blogserver:
+            aliases:
+               - mysql
+
+networks:
+    blogserver:
+       driver: bridge
+       ipam:
+         driver: default
+         config:
+           - subnet: 172.88.0.0/24
