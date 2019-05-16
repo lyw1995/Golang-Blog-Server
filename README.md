@@ -17,6 +17,8 @@ Go语言编写的简易版博客服务端
     - `make down` docker-compose停止并删除服务
 + `curl http://localhost:8888/api/v1/users` 获取初始化插入用户数据
 + ` http://localhost:8888/docs/index.html` 查看api文档
++ ` docker方式,浏览器访问 http://localhost:24245/` 博客客户端
++ ` docker方式,浏览器访问 http://localhost:24246/` 博客后台管理
 ## 项目依赖
 * [dotweb](https://github.com/devfeel/dotweb)
 * jwt
