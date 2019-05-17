@@ -1,9 +1,4 @@
 # Golang-Blog-Server
-
-![apidoc](/screenshot/apidoc.png)
-![blogadmin](https://github.com/lyw1995/Angular5-Blog-Admin/raw/master/snapshot/blog_admin.png)
-![blogfront](https://github.com/lyw1995/Angular5-Blog-Front/raw/master/snapshot/blog_front.png)
-
 Go语言编写的简易版博客服务端
 + 开启go mod` export GO111MODULE=on`
 + god mod 代理设置`export GOPROXY=https://athens.azurefd.net`
@@ -19,6 +14,10 @@ Go语言编写的简易版博客服务端
 + ` http://localhost:8888/docs/index.html` 查看api文档
 + ` docker方式,浏览器访问 http://localhost:24245/` 博客客户端
 + ` docker方式,浏览器访问 http://localhost:24246/` 博客后台管理
+
+![apidoc](/screenshot/apidoc.png)
+![blogadmin](https://github.com/lyw1995/Angular5-Blog-Admin/raw/master/snapshot/blog_admin.png)
+![blogfront](https://github.com/lyw1995/Angular5-Blog-Front/raw/master/snapshot/blog_front.png)
 ## 项目依赖
 * [dotweb](https://github.com/devfeel/dotweb)
 * jwt
