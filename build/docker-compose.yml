@@ -12,7 +12,7 @@ services:
 
   nginx:
     restart: always
-    image: yinguiw/blog_server:1.0
+    image: yinguiw/blog_nginx:1.0
     ports: 
      - "24245:24245"
      - "24246:24246"
